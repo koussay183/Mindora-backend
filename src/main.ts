@@ -55,6 +55,18 @@ async function bootstrap() {
   // Global logging interceptor
   app.useGlobalInterceptors(new LoggingInterceptor());
 
+  // Health check at root (before API prefix)
+  app.use('/', (req, res, next) => {
+    if (req.method === 'GET' && req.url === '/') {
+      return res.json({
+        status: 'ok',
+        message: 'Mindora Backend is running',
+        timestamp: new Date().toISOString(),
+      });
+    }
+    next();
+  });
+
   // API prefix
   app.setGlobalPrefix('api');
 
