@@ -30,7 +30,7 @@ Before deploying, you'll need these environment variables from Firebase Console:
    - **Region:** Choose closest to your users
    - **Branch:** `main` (or your default branch)
    - **Runtime:** Node
-   - **Build Command:** `npm install && npm run build`
+   - **Build Command:** `npm ci && npm run build`
    - **Start Command:** `npm run start:prod`
    - **Instance Type:** Free (or paid for production)
 

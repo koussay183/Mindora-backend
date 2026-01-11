@@ -28,7 +28,7 @@ Go to your Render dashboard and update these settings:
 
 **Build & Deploy Settings:**
 ```
-Build Command: npm install && npm run build
+Build Command: npm ci && npm run build
 Start Command: npm run start:prod
 ```
 
