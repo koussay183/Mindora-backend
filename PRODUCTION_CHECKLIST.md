@@ -5,7 +5,7 @@
 ### Memory Management
 - ✅ Updated build script with `NODE_OPTIONS="--max-old-space-size=2048"` for local builds
 - ✅ Configured Render with `NODE_OPTIONS=--max-old-space-size=512` for free tier
-- ✅ Added `rimraf` for clean builds (prebuild script)
+- ✅ Using native `rm -rf` command for clean builds (no extra dependencies)
 - ✅ Modified start script to build and run in production
 
 ### Production Configuration
