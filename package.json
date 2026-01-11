@@ -6,10 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "NODE_OPTIONS=\"--max-old-space-size=2048\" nest build",
+    "build": "npx nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "nest build && node dist/main",
+    "start": "node dist/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
