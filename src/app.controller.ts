@@ -9,7 +9,7 @@ export class AppController {
   getHealth() {
     return {
       status: 'ok',
-      message: 'Mindora Backend is running',
+      message: 'Mindora Backend API is healthy',
       timestamp: new Date().toISOString(),
       uptime: process.uptime(),
     };
